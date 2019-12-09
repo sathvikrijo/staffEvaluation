@@ -3495,6 +3495,7 @@
         }
     </style>
     <script type="text/javascript">
+
 		function addRowEduQ() {
 			var table = document.getElementById('edu_q');
 			var rowCount = table.rows.length;
@@ -3534,8 +3535,237 @@
             cell6.className = "c78";
             cell6.colSpan = 1;
             cell6.rowSpan = 1;
-            cell6.innerHTML = "<p class='c7 c15'><span class='c4'><input type='text' name='column_clObtained[]' style='box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;'/></span></p>";
+            cell6.innerHTML = "<p class='c7 c15'><span class='c4'><input type='text' name='column_clObtained[]' style='box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;'/></span></p>";  
+        }
+
+        function newRowTwe(){
+            var table = document.getElementById('table_twe');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+            row.className = "c24";
             
+            var cell1 = row.insertCell(0);
+            cell1.className = "c39";
+            cell1.colSpan = 1;
+            cell1.rowSpan = 1;
+            cell1.innerHTML = '<p class="c56 c15"><span class="c4"><input type="text" name="twe_name_institute[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>'
+
+            var cell2 = row.insertCell(1);
+            cell2.className = "c85";
+            cell2.colSpan = 1;
+            cell2.rowSpan = 1;
+            cell2.innerHTML = '<p class="c42 c15"><span class="c4"><input type="text" name="twe_designation[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>'
+
+            var cell3 = row.insertCell(2);
+            cell3.colSpan = 1;
+            cell3.rowSpan = 1;
+            cell3.className = "c45";
+            cell3.innerHTML = '<p class="c42 c15"><span class="c4"><input type="text" name="twe_doj[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>'
+
+            var cell4 = row.insertCell(3);
+            cell4.colSpan = 1;
+            cell4.rowSpan = 1;
+            cell4.className = "c108";
+            cell4.innerHTML = '<p class="c42 c15"><span class="c4"><input type="text" name="twe_dor[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>'
+
+            var cell5 = row.insertCell(4);
+            cell5.colSpan = 1;
+            cell5.rowSpan = 1;
+            cell5.className = "c170";
+            cell5.innerHTML = '<p class="c15 c42"><span class="c4"><input type="text" name="twe_years[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>'
+
+            var cell6 = row.insertCell(5);
+            cell6.colSpan = 1;
+            cell6.rowSpan = 1;
+            cell6.className = "c32";
+            cell6.innerHTML = '<p class="c42 c15"><span class="c4"><input type="text" name="twe_months[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>'
+
+            var cell7 = row.insertCell(6);
+            cell7.colSpan = 1;
+            cell7.rowSpan = 1;
+            cell7.className = "c32";
+            cell7.innerHTML = '<p class="c42 c15"><span class="c4"><input type="text" name="twe_days[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>'
+        }
+
+        function newRowSh(){
+            var table = document.getElementById('table_sh');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+            row.className = "c24";
+
+            var cell1 = row.insertCell(0);
+            cell1.className = "c1";
+            cell1.rowSpan = 1;
+            cell1.colSpan = 1;
+            cell1.innerHTML = '<p class="c7 c15"><span class="c4"><input type="text" name="sh_subject[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>'
+
+            var cell2 = row.insertCell(1);
+            cell2.className = "c92";
+            cell2.rowSpan = 1;
+            cell2.colSpan = 1;
+            cell2.innerHTML = '<p class="c7 c15"><span class="c0"><input type="text" name="sh_NovDec13[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell3 = row.insertCell(2);
+            cell3.className = "c165";
+            cell3.rowSpan = 1;
+            cell3.colSpan = 1;
+            cell3.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_AprMay14[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell4 = row.insertCell(3);
+            cell4.className = "c18";
+            cell4.rowSpan = 1;
+            cell4.colSpan = 1;
+            cell4.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_NovDec14[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell5 = row.insertCell(4);
+            cell5.className = "c18";
+            cell5.rowSpan = 1;
+            cell5.colSpan = 1;
+            cell5.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_AprMay15[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell6 = row.insertCell(5);
+            cell6.className = "c18";
+            cell6.rowSpan = 1;
+            cell6.colSpan = 1;
+            cell6.innerHTML = '<p class="c7 c15"><span class="c0"><input type="text" name="sh_NovDec15[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell7 = row.insertCell(6);
+            cell7.className = "c18";
+            cell7.rowSpan = 1;
+            cell7.colSpan = 1;
+            cell7.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_AprMay16[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell8 = row.insertCell(7);
+            cell8.className = "c18";
+            cell8.rowSpan = 1;
+            cell8.colSpan = 1;
+            cell8.innerHTML = '<p class="c7 c15 c41"><span class="c0"><input type="text" name="sh_NovDec16[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell9 = row.insertCell(8);
+            cell9.className = "c18";
+            cell9.rowSpan = 1;
+            cell9.colSpan = 1;
+            cell9.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_AprMay17[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell10 = row.insertCell(9);
+            cell10.className = "c18";
+            cell10.rowSpan = 1;
+            cell10.colSpan = 1;
+            cell10.innerHTML = '<p class="c7 c15"><span class="c0"><input type="text" name="sh_NovDec17[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell11 = row.insertCell(10);
+            cell11.className = "c18";
+            cell11.rowSpan = 1;
+            cell11.colSpan = 1;
+            cell11.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_AprMay18[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell12 = row.insertCell(11);
+            cell12.className = "c18";
+            cell12.rowSpan = 1;
+            cell12.colSpan = 1;
+            cell12.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_NovDec18[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell13 = row.insertCell(12);
+            cell13.className = "c18";
+            cell13.rowSpan = 1;
+            cell13.colSpan = 1;
+            cell13.innerHTML = '<p class="c7 c15 c41"><span class="c0"><input type="text" name="sh_AprMay19[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell14 = row.insertCell(13);
+            cell14.className = "c18";
+            cell14.rowSpan = 1;
+            cell14.colSpan = 1;
+            cell14.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_NovDec19[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell15 = row.insertCell(14);
+            cell15.className = "c18";
+            cell15.rowSpan = 1;
+            cell15.colSpan = 1;
+            cell15.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_AprDec20[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell16 = row.insertCell(15);
+            cell16.className = "c18";
+            cell16.rowSpan = 1;
+            cell16.colSpan = 1;
+            cell16.innerHTML = '<p class="c7 c15 c41"><span class="c0"><input type="text" name="sh_NovDec20[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+
+            var cell17 = row.insertCell(16);
+            cell17.className = "c61";
+            cell17.rowSpan = 1;
+            cell17.colSpan = 1;
+            cell17.innerHTML = '<p class="c7 c15 c44"><span class="c0"><input type="text" name="sh_AprMay21[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>';
+        }
+
+        function newRowPd(){
+            var table = getElementById('table_pd');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowPa(){
+            var table = getElementById('table_pa');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowJd(){
+            var table = getElementById('table_jd');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowCd(){
+            var table = getElementById('table_cd');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowBc(){
+            var table = getElementById('table_Bc');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount-1);
+        }
+
+        function newRowTu(){
+            var table = getElementById('table_tu');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowOcu(){
+            var table = getElementById('table_ocu');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowCo(){
+            var table = getElementById('table_co');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowProdDev(){
+            var table = getElementById('table_pro_dev');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowFdp(){
+            var table = getElementById('table_fdp');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowGd(){
+            var table = getElementById('table_gd');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        }
+
+        function newRowMd(){
+            var table = getElementById('table_md');
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
         }
     </script>
 </head>
@@ -3716,26 +3946,6 @@
                     <p class="c7 c15"><span class="c4"><input type="text" name="column_clObtained[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
                 </td>
             </tr>
-            <!-- <tr class="c24">
-                <td class="c66" colspan="1" rowspan="1">
-                    <p class="c28"><span class="c4"><input type="text" name="column_" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
-                </td>
-                <td class="c117" colspan="2" rowspan="1">
-                    <p class="c7 c15"><span class="c4"><input type="text" name="column_15" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
-                </td>
-                <td class="c114" colspan="1" rowspan="1">
-                    <p class="c7 c15"><span class="c4"><input type="text" name="column_16" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
-                </td>
-                <td class="c37" colspan="1" rowspan="1">
-                    <p class="c7 c15"><span class="c4"><input type="text" name="column_17" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
-                </td>
-                <td class="c75" colspan="1" rowspan="1">
-                    <p class="c7 c15"><span class="c4"><input type="text" name="column_18" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
-                </td>
-                <td class="c78" colspan="1" rowspan="1">
-                    <p class="c7 c15"><span class="c4"><input type="text" name="column_19" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
-                </td>
-            </tr> -->
             <tr class="c24">
                 <td class="c66" colspan="1" rowspan="1">
                     <p class="c17"><span class="c8">Title of Ph.D. Thesis </span></p>
@@ -3753,7 +3963,7 @@
     <p class="c12"><span class="c6"></span></p>
     <a id="t.4d477fbf60604170a06ef32b662a2b7767bfc629"></a>
     <a id="t.2"></a>
-    <table class="c25">
+    <table class="c25" id='table_twe'>
         <tbody>
             <tr class="c24">
                 <td class="c156" colspan="7" rowspan="1">
@@ -3788,6 +3998,7 @@
                     <p class="c28"><span class="c8">Days</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowTwe()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c39" colspan="1" rowspan="1">
                     <p class="c56 c15"><span class="c4"><input type="text" name="twe_name_institute[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -3816,7 +4027,7 @@
     <p class="c12"><span class="c6"></span></p>
     <a id="t.1550a110ca9093cf734902ddc90ce19bc71376c8"></a>
     <a id="t.3"></a>
-    <table class="c25">
+    <table class="c25" id="table_sh">
         <tbody>
             <tr class="c24">
                 <td class="c111" colspan="17" rowspan="1">
@@ -3916,6 +4127,7 @@
                     <p class="c7 c44"><span class="c19">Apr / May 21</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick="newRowSh()" style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c1" colspan="1" rowspan="1">
                     <p class="c7 c15"><span class="c4"><input type="text" name="sh_subject[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4019,6 +4231,7 @@
                     <p class="c7"><span class="c14">Rejected</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowPd()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c113" colspan="1" rowspan="1">
                     <p class="c10"><span class="c4"><input type="text" name="pd_ay[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4097,6 +4310,7 @@
                     <p class="c7"><span class="c8">Granted</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowPa()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c160" colspan="1" rowspan="1">
                     <p class="c7 c15"><span class="c4"><input type="text" name="pa_ay[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4186,6 +4400,7 @@
                     <p class="c7"><span class="c14">Non-Indexed &nbsp;Scopus Journal</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowJd()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c122" colspan="1" rowspan="1">
                     <p class="c7 c15"><span class="c4"><input type="text" name="jd_authors[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4264,6 +4479,7 @@
                     <p class="c7"><span class="c14">Non-Indexed &nbsp;IEEE / Springer Conference</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowCd()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c142" colspan="1" rowspan="1">
                     <p class="c7 c15"><span class="c4"><input type="text" name="cd_authors[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4330,6 +4546,7 @@
                     <p class="c7 c15"><span class="c2"></span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowBc()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c152" colspan="1" rowspan="1">
                     <p class="c7 c15"><span class="c4"><input type="text" name="bc_authors[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4382,6 +4599,7 @@
                     <p class="c7"><span class="c14">Number of Days</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowTu()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c155" colspan="1" rowspan="1">
                     <p class="c10"><span class="c4"><input type="text" name="tu_ay[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4428,6 +4646,7 @@
                     <p class="c7"><span class="c14">Rank</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowOcu()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c123" colspan="1" rowspan="1">
                     <p class="c10"><span class="c4"><input type="text" name="ocu_ay[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4474,6 +4693,7 @@
                     <p class="c7"><span class="c14">Status</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowCo()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c99" colspan="1" rowspan="1">
                     <p class="c10"><span class="c4"><input type="text" name="co_ay[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4531,6 +4751,7 @@
                     <p class="c7"><span class="c14">Granted</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowProdDev()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c55" colspan="1" rowspan="1">
                     <p class="c42 c15"><span class="c4"><input type="text" name="prod_dev_ay[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4602,6 +4823,7 @@
                     <p class="c42"><span class="c14">Rejected</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowFdp()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c57" colspan="1" rowspan="1">
                     <p class="c10"><span class="c4"><input type="text" name="spon_ay[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -4851,6 +5073,7 @@
                     <p class="c42"><span class="c14">Viva Date</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowGd()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c112" colspan="1" rowspan="1">
                     <p class="c7 c15"><span class="c4"><input type="text" name="gd_reg[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
@@ -5009,6 +5232,7 @@
                     <p class="c28"><span class="c8">8</span></p>
                 </td>
             </tr>
+            <input type="button" value="+" onclick='newRowMd()' style="float:right;margin-top: 3em;margin-left:1em;"/>
             <tr class="c24">
                 <td class="c154" colspan="1" rowspan="1">
                     <p class="c7 c15"><span class="c4"><input type="text" name="nos[]" style="box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;width:100%;height:100%;margin:0;border-width:0px;border:none;"/></span></p>
